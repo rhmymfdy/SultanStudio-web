@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white border-gray-200 shadow">
@@ -54,7 +55,11 @@ const Navbar = () => {
             </li>
 
             <li className="relative group">
-              <button className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 lg:w-auto">
+              <button
+                type="button"
+                onClick={() => setDropdownOpen(!isDropdownOpen)} // toggle dropdown
+                className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 lg:w-auto"
+              >
                 Dropdown
                 <svg
                   className="w-2.5 h-2.5 ml-2"
@@ -70,7 +75,11 @@ const Navbar = () => {
                   />
                 </svg>
               </button>
-              <div className="absolute z-10 hidden group-hover:block bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+
+              <div
+                className={`absolute z-10 ${isDropdownOpen ? "block" : "hidden"}
+                group-hover:block bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
+              >
                 <ul className="py-2 text-sm text-gray-700">
                   <li>
                     <a href="#" className="block px-4 py-2 hover:bg-gray-100">
