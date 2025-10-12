@@ -1,6 +1,7 @@
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar/Navbar";
 import Jumbotron from "@/components/Jumbotron/Jumbotron";
 import CardKategori from "@/components/CardKategori/CardKategori";
+import LayananKamiView from "@/views/LayananKami/LayananKami";
 
 import Image from "next/image";
 
@@ -9,7 +10,7 @@ export default function Home() {
     <>
       <Navbar />
       <Jumbotron />
-      <CardKategori />
+      <LayananKamiView />
     </>
   );
 }

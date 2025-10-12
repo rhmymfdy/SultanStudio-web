@@ -1,59 +1,46 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-const CardKategori = () => {
+import { useEffect, useState } from "react";
+
+
+
+
+// Import Swiper styles
+import 'swiper/css';
+const CardKategori = ({ reservasiFoto, linkReservasi, imgKategori }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((p) => (p + 1) % imgKategori.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
-    <div className="w-[90%] p-2 lg:max-w-3/4 border-2 md:max-w-[90%] m-auto ">
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 ">
-        <div className="bg-gradient-to-t from-white to bg-transparent ">
-          <Image
-            src="/KategoriFoto/Untitled-1.jpg"
-            alt="Picture of the author"
-            width={700}
-            height={500}
-            className="object-cover "
-          />
-          <div className="border-2">
-            <Link href={"/"}>
-              <div className="p-2 text-center ">
-                <p className="text-lg font-bold">Kategori</p>
-              </div>
-            </Link>
+    <div className="   hover:scale-[102%] duration-300 hover:shadow-lg  " >
+      <Link href={linkReservasi}>
+        <div className="m-auto  rounded-md  w-[100%] h-[450px]  lg:h-[600px] md:h-[450px] relative">
+          {imgKategori.map((src, idx) => (
+            <img
+              key={src}
+              src={src}
+              alt={`jumbotron-foto ${idx + 1}`}
+              width={1920}
+              height={1080}
+              className={`absolute p-2 inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${idx === currentIndex ? "opacity-100 z-0" : "opacity-0 z-0"
+                }`}
+              style={{ transform: "translateZ(0)" }}
+              loading={idx === 0 ? "eager" : "lazy"}
+            />
+          ))}
+          <div className="mt-2 absolute bottom-0 m-auto bg-gold hover:gold/80 w-[70%]  text-white ">
+            <p className="agatho text-[16px] px-2 py-1 lg:text-[24px] md:text-[20px]">{reservasiFoto}</p>
           </div>
         </div>
-        <div className="border-2 border-amber-600 ">
-          <Link href={"/"}>
-            <Image
-              src="/KategoriFoto/Untitled-1.jpg"
-              alt="Picture of the author"
-              width={700}
-              height={500}
-              className="object-cover"
-            />
-          </Link>
-        </div>
-        <div className="border-2 border-amber-600 ">
-          <Link href={"/"}>
-            <Image
-              src="/KategoriFoto/Untitled-1.jpg"
-              alt="Picture of the author"
-              width={700}
-              height={500}
-              className="object-cover"
-            />
-          </Link>
-        </div>
-        <div className="border-2 border-amber-600 ">
-          <Link href={"/"}>
-            <Image
-              src="/KategoriFoto/Untitled-1.jpg"
-              alt="Picture of the author"
-              width={700}
-              height={500}
-              className="object-cover"
-            />
-          </Link>
-        </div>
-      </div>
+      </Link>
     </div>
   );
 };

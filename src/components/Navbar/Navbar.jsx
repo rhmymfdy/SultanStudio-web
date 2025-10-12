@@ -1,4 +1,4 @@
-"use client"; // Jika pakai App Router
+"use client";
 
 import { useState } from "react";
 
@@ -15,7 +15,7 @@ const Navbar = () => {
             className="h-8"
             alt="Sultan Studio Logo"
           />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">
+          <span className="self-center monteria  text-2xl font-semibold whitespace-nowrap text-gold_tua">
             Sultan Studio
           </span>
         </a>
@@ -40,9 +40,8 @@ const Navbar = () => {
 
         {/* Menu Items */}
         <div
-          className={`${
-            isMobileMenuOpen ? "block" : "hidden"
-          } w-full lg:block lg:w-auto`}
+          className={`${isMobileMenuOpen ? "block" : "hidden"
+            } w-full lg:block lg:w-auto`}
         >
           <ul className="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white">
             <li>

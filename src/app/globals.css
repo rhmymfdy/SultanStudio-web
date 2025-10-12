@@ -1,1 +1,68 @@
 @import "tailwindcss";
+
+:root {
+  --background: #fcba03;
+  --foreground: #171717;
+}
+
+/* globals.css */
+@font-face {
+  font-family: "Catarman";
+  src: url("/Font/Catamaran-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* supaya gampang dipakai */
+.catarman {
+  font-family: "Catarman", sans-serif;
+}
+
+/* globals.css */
+@font-face {
+  font-family: "Monteria";
+  src: url("/Font/mika-melvas-monteria-regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* contoh penggunaan */
+.monteria {
+  font-family: "Monteria", Monteria;
+}
+
+/* globals.css */
+@font-face {
+  font-family: "Agatho";
+  src: url("/Font/Agatho_Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* contoh penggunaan */
+.agatho {
+  font-family: "Agatho", serif;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-gold: #e2ae03;
+  --color-gold_tua: #d6a502;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* --animate-contact: contact 1s alternate ease-in infinite;
+
+  @keyframes contact {
+    0% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  } */
+}
