@@ -1,4 +1,4 @@
-import Navbar from "@/components/Navbar/Navbar";
+import Navbar from "@/views/Navbar/Navbar";
 import Jumbotron from "@/components/Jumbotron/Jumbotron";
 import CardKategori from "@/components/CardKategori/CardKategori";
 import LayananKamiView from "@/views/LayananKami/LayananKami";

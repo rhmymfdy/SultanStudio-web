@@ -39,7 +39,7 @@ const CardKategori = ({ reservasiFoto, linkReservasi, imgKategori }) => {
               unoptimized
             />
           ))}
-          <div className="mt-2 absolute bottom-0 z-90 m-auto bg-gold hover:gold/80 w-[70%]  text-white ">
+          <div className="mt-2 absolute bottom-0 z-40 m-auto bg-gold hover:gold/80 w-[70%]  text-white ">
             <p className="agatho text-[16px] px-2 py-1 lg:text-[24px] md:text-[20px]">{reservasiFoto}</p>
           </div>
         </div>

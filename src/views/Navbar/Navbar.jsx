@@ -1,6 +1,9 @@
 "use client";
-
+import { IoClose, IoMenu } from "react-icons/io5";
+import { FaChevronDown } from 'react-icons/fa6';
 import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,16 +12,19 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white border-gray-200 shadow">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img
+        <Link href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Image
             src="/logo-sultan-studio.png"
-            className="h-8"
             alt="Sultan Studio Logo"
+            width={32}  // Karena class h-8 itu sekitar 32px (8 * 4px)
+            height={32} // Sesuaikan tinggi biar proporsional, bisa disesuaikan sesuai gambar asli
+            className="h-8"
+            priority
           />
           <span className="self-center monteria  text-2xl font-semibold whitespace-nowrap text-gold_tua">
             Sultan Studio
           </span>
-        </a>
+        </Link>
 
         {/* Toggle Button */}
         <button
@@ -26,16 +32,11 @@ const Navbar = () => {
           onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
         >
-          <span className="sr-only">Open main menu</span>
-          <svg className="w-5 h-5" fill="none" viewBox="0 0 17 14">
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M1 1h15M1 7h15M1 13h15"
-            />
-          </svg>
+          {!isMobileMenuOpen ? (
+            <IoMenu className="size-8" />
+          ) : (
+            <IoClose className="size-8" />
+          )}
         </button>
 
         {/* Menu Items */}
@@ -60,24 +61,18 @@ const Navbar = () => {
                 className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 lg:w-auto"
               >
                 Dropdown
-                <svg
-                  className="w-2.5 h-2.5 ml-2"
-                  fill="none"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="m1 1 4 4 4-4"
-                  />
-                </svg>
+
+
+                {!isDropdownOpen ? (
+                  <FaChevronDown className="ml-2" />
+                ) : (
+                  <IoClose className="ml-2" />
+                )}
               </button>
 
               <div
                 className={`absolute z-10 ${isDropdownOpen ? "block" : "hidden"}
-                group-hover:block bg-white divide-y divide-gray-100 rounded-lg shadow w-44`}
+                group-hover:block bg-white divide-y divide-gray-100 rounded-lg shadow lg:w-44 w-60`}
               >
                 <ul className="py-2 text-sm text-gray-700">
                   <li>
