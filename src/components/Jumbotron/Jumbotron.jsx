@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const images = [
   "https://eotmlhfvsaspxchavatc.supabase.co/storage/v1/object/public/FotoTampilan/NDA_0167.jpg",
@@ -26,17 +27,22 @@ export default function Jumbotron() {
       <section className="hidden lg:block relative h-screen overflow-hidden ">
         {/* Layered images */}
         {images.map((src, idx) => (
-          <img
+          <div
             key={src}
-            src={src}
-            alt={`jumbotron-foto ${idx + 1}`}
-            width={1920}
-            height={1080}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${idx === currentIndex ? "opacity-100 z-0" : "opacity-0 z-0"
+            className={`absolute inset-0 p-2 w-full h-full object-cover rounded-xl transition-opacity duration-1000 ease-in-out ${idx === currentIndex ? "opacity-100" : "opacity-0"
               }`}
-            style={{ transform: "translateZ(0)" }}
-            loading={idx === 0 ? "eager" : "lazy"}
-          />
+          >
+            <Image
+              src={src}
+              alt={`jumbotron-foto ${idx + 1}`}
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              style={{ objectFit: "cover" }}
+              priority={idx === 0} // Prioritaskan gambar pertama untuk preloading
+              loading={idx === 0 ? "eager" : "lazy"} // Eager load hanya gambar pertama
+              quality={75} // Kompres kualitas gambar supaya ringan tapi tetap bagus
+            />
+          </div>
         ))}
 
         {/* Overlay gradient + text content */}
@@ -89,19 +95,28 @@ export default function Jumbotron() {
           </h2>
         </div>
 
-        <div className="relative p-2 flex items-center justify-center w-full h-64 sm:h-80 md:h-96 overflow-hidden rounded-xl">
+        <div className="relative p-2 flex items-center justify-center w-full h-64 sm:h-80 md:h-96 overflow-hidden ">
           {images.map((src, idx) => (
-            <img
+            <div
               key={src}
-              src={src}
-              alt={`jumbotron-foto ${idx + 1}`}
-              width={1920}
-              height={1080}
-              className={`absolute inset-0 p-2 w-full h-full object-cover rounded-xl transition-opacity duration-1000 ease-in-out ${idx === currentIndex ? "opacity-100" : "opacity-0"
+              className={`absolute inset-0 p-2  w-full h-full object-cover rounded-xl transition-opacity duration-1000 ease-in-out ${idx === currentIndex ? "opacity-100" : "opacity-0"
                 }`}
-              loading={idx === 0 ? "eager" : "lazy"}
-            />
+            >
+              <Image
+                src={src}
+                alt={`jumbotron-foto ${idx + 1}`}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ objectFit: "cover" }}
+                priority={idx === 0} // Prioritaskan gambar pertama untuk preloading
+                loading={idx === 0 ? "eager" : "lazy"} // Eager load hanya gambar pertama
+                quality={75} // Kompres kualitas gambar supaya ringan tapi tetap bagus
+                className="px-2"
+              />
+            </div>
           ))}
+
+
         </div>
 
 
