@@ -39,7 +39,7 @@ export default function AboutCard() {
                         Tentang Kami
                     </h2>
                     <p className="text-black text-[14px] lg:text-[16px]   leading-relaxed mb-4">
-                        Selamat datang di <strong>Sultan Studio</strong>, penyedia layanan fotografi dan videografi profesional yang siap mengabadikan setiap momen berharga Anda dengan sentuhan artistik dan penuh makna.
+                        <strong>Sultan Studio</strong> adalah layanan penyedia fotografi dan videografi profesional yang siap mengabadikan setiap momen berharga Anda dengan sentuhan artistik dan penuh makna.
                         <br />
                         Kami menghadirkan berbagai layanan mulai dari prewedding, wedding, wisuda, keluarga, hingga foto produk dan event, dengan kualitas visual tinggi dan hasil yang bercerita.
                         <br />

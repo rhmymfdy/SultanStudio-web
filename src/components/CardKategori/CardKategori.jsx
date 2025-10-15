@@ -20,9 +20,9 @@ const CardKategori = ({ reservasiFoto, linkReservasi, imgKategori }) => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="   hover:scale-[102%] duration-300 hover:shadow-lg  " >
+    <div className=" hover:scale-[102%] duration-300 hover:shadow-lg p-2  " >
       <Link href={linkReservasi}>
-        <div className="m-auto  rounded-md  w-[100%] h-[450px]  lg:h-[600px] md:h-[450px] relative">
+        <div className="m-auto  w-[90%] lg:w-[100%] h-[350px]  lg:h-[450px] md:h-[350px] relative ">
           {imgKategori.map((src, idx) => (
             <Image
               key={src}
@@ -39,8 +39,8 @@ const CardKategori = ({ reservasiFoto, linkReservasi, imgKategori }) => {
               unoptimized
             />
           ))}
-          <div className="mt-2 absolute bottom-0 z-40 m-auto bg-gold hover:gold/80 w-[70%]  text-white ">
-            <p className="agatho text-[16px] px-2 py-1 lg:text-[24px] md:text-[20px]">{reservasiFoto}</p>
+          <div className="mt-2 absolute bottom-0 z-40 m-auto bg-gold hover:gold/80 w-full ">
+            <p className="font-bold text-white text-xl  lg:text-2xl   leading-relaxed text-center m-auto py-1">{reservasiFoto}</p>
           </div>
         </div>
       </Link>

@@ -49,11 +49,11 @@ export default function Jumbotron() {
         <div className="absolute inset-0 flex items-center bg-gradient-to-r from-white to-transparent p-5 z-20">
           <div className="max-w-[60%] p-7 ml-10   ">
             <h1 className="text-black text-5xl agatho font-semibold mb-4">
-              Welcome to our website
+              Welcome to Sultan Studio
             </h1>
             <hr className="border-gold w-[30%] border-2 mb-3 rounded-[100px]" />
             <p className=" leading-relaxed text-[18px] text-black mb-2">
-              Selamat datang di <strong>Sultan Studio</strong> — Studio foto bergaya elegan dengan nuansa mewah. Didukung peralatan modern dan lokasi strategis, kami hadirkan pengalaman premium dengan harga terjangkau. Cocok untuk sesi keluarga, prewedding, personal branding, hingga kebutuhan komersial.
+              Studio foto bergaya elegan dengan nuansa mewah. Didukung peralatan modern dan lokasi strategis, kami hadirkan pengalaman premium dengan harga terjangkau. Cocok untuk sesi keluarga, prewedding, personal branding, hingga kebutuhan komersial.
             </p>
             <h2 className="agatho text-2xl font-semibold text-black mb-6">
               Abadikan Moment Indahmu Bersama Kami!
@@ -84,11 +84,11 @@ export default function Jumbotron() {
       <section className="block lg:hidden items-center transition-all duration-700  mb-4 mt-8 ">
         <div className="mt-27 text-center px-4 md:px-10 ">
           <h1 className="text-black text-3xl md:text-4xl p-2 agatho font-bold ">
-            Welcome to our website
+            Welcome to Sultan Studio
           </h1>
           <hr className="m-auto border-gold w-[40%] md:w-[30%] border lg:border-2 mb-4 rounded-[100px]" />
           <p className="catarman font-normal text-[14px] md:text-[16px] text-black mb-5">
-            Selamat datang di <strong>Sultan Studio</strong> — Studio foto bergaya elegan dengan nuansa mewah. Didukung peralatan modern dan lokasi strategis, kami hadirkan pengalaman premium dengan harga terjangkau. Cocok untuk sesi keluarga, prewedding, personal branding, hingga kebutuhan komersial.
+            Studio foto bergaya elegan dengan nuansa mewah. Didukung peralatan modern dan lokasi strategis, kami hadirkan pengalaman premium dengan harga terjangkau. Cocok untuk sesi keluarga, prewedding, personal branding, hingga kebutuhan komersial.
           </p>
           <h2 className="agatho text-[18px] font-bold md:text-[22px] text-black mb-6">
             Abadikan Moment Indahmu Bersama Kami!

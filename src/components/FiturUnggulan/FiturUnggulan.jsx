@@ -35,12 +35,12 @@ const FiturUnggulan = () => {
 
 
                 <section className=" text-center mb-10">
-                    <h1 className=" text-3xl md:text-4xl agatho font-bold text-black  mb-4  ">
+                    <h2 className=" text-3xl md:text-4xl agatho font-bold text-black  mb-4  ">
                         Mengapa Harus Memilih Sultan Studio?
-                    </h1>
-                    <h2 className="text-black text-[14px] lg:text-[16px]   leading-relaxed">
-                        Temukan Alasan Studio Kami Jadi Pilihan Terbaik
                     </h2>
+                    <h3 className="text-black text-[14px] lg:text-[16px]   leading-relaxed">
+                        Temukan Alasan Studio Kami Jadi Pilihan Terbaik
+                    </h3>
                 </section>
                 <section className=" lg:grid-cols-3 grid grid-cols-1 gap-4   ">
 
@@ -53,9 +53,9 @@ const FiturUnggulan = () => {
                             height={100}
                             className="m-auto mb-2"
                         />
-                        <h3 className=" agatho font-bold text-black text-xl  lg:text-2xl   leading-relaxed  mb-2">
+                        <h4 className=" agatho font-bold text-black text-xl  lg:text-2xl   leading-relaxed  mb-2">
                             Lokasi Strategis
-                        </h3>
+                        </h4>
                         <p className="text-black text-[14px] lg:text-[16px] leading-relaxed">
                             Terletak di pusat kota, <strong>Sultan Studio</strong> mudah dijangkau dan dikelilingi fasilitas pendukung, membuat setiap sesi foto dan video berjalan lebih efisien dan nyaman.
                         </p>
@@ -70,9 +70,9 @@ const FiturUnggulan = () => {
                             height={100}
                             className="m-auto mb-3"
                         />
-                        <h3 className="agatho font-bold text-black text-xl  lg:text-2xl   leading-relaxed  mb-2 ">
+                        <h4 className="agatho font-bold text-black text-xl  lg:text-2xl   leading-relaxed  mb-2 ">
                             Garansi
-                        </h3>
+                        </h4>
                         <p className="text-black text-[14px] lg:text-[16px] leading-relaxed">
                             File disimpan aman selama 1 tahun. Jika hilang, Anda bisa memintanya kembali gratis. <strong>Sultan Studio</strong> menjamin keamanan file serta kepuasan atas setiap hasil karya.
                         </p>
@@ -87,9 +87,9 @@ const FiturUnggulan = () => {
                             height={100}
                             className="m-auto mb-3"
                         />
-                        <h3 className=" agatho font-bold text-black text-xl  lg:text-2xl   leading-relaxed  mb-2 ">
+                        <h4 className=" agatho font-bold text-black text-xl  lg:text-2xl   leading-relaxed  mb-2 ">
                             Harga Terjangkau
-                        </h3>
+                        </h4>
                         <p className="text-black text-[14px] lg:text-[16px] leading-relaxed">
                             <strong>Sultan Studio</strong> menghadirkan layanan foto dan video profesional dengan harga bersahabat, memastikan setiap momen berharga tetap berkualitas tanpa harus mahal.
                         </p>
@@ -103,9 +103,9 @@ const FiturUnggulan = () => {
                             height={100}
                             className="m-auto mb-3"
                         />
-                        <h3 className="agatho font-bold text-black text-xl  lg:text-2xl   leading-relaxed  mb-2">
+                        <h4 className="agatho font-bold text-black text-xl  lg:text-2xl   leading-relaxed  mb-2">
                             Layanan Terlengkap & Teknologi Terkini
-                        </h3>
+                        </h4>
                         <p className="text-black text-[14px] lg:text-[16px] leading-relaxed">
                             <strong>Sultan Studio</strong> menghadirkan berbagai layanan foto dan video dengan peralatan modern serta teknologi terbaru, memastikan setiap hasil tampak maksimal, tajam, dan berkelas profesional.
                         </p>
@@ -119,9 +119,9 @@ const FiturUnggulan = () => {
                             height={100}
                             className="m-auto mb-3"
                         />
-                        <h3 className=" agatho font-bold text-black text-xl  lg:text-2xl   leading-relaxed  mb-2">
+                        <h4 className=" agatho font-bold text-black text-xl  lg:text-2xl   leading-relaxed  mb-2">
                             Tim Profesional & Berpengalaman
-                        </h3>
+                        </h4>
                         <p className="text-black text-[14px] lg:text-[16px] leading-relaxed">
                             Tim <strong>Sultan Studio</strong> berpengalaman dan berdedikasi, siap menghasilkan karya foto dan video terbaik secara profesional.
                         </p>
@@ -136,9 +136,9 @@ const FiturUnggulan = () => {
                             height={100}
                             className="m-auto mb-3"
                         />
-                        <h3 className="agatho font-bold text-black text-xl  lg:text-2xl   leading-relaxed  mb-2">
+                        <h4 className="agatho font-bold text-black text-xl  lg:text-2xl   leading-relaxed  mb-2">
                             Instansi Legal
-                        </h3>
+                        </h4>
                         <p className="text-black text-[14px] lg:text-[16px] leading-relaxed">
                             <strong>© Sultan Studio</strong> — Usaha resmi terdaftar dan beroperasi sesuai hukum yang berlaku di Indonesia.
                         </p>
