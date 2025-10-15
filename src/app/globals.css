@@ -22,7 +22,7 @@
 /* globals.css */
 @font-face {
   font-family: "Monteria";
-  src: url("/Font/mika-melvas-monteria-regular.otf") format("otf");
+  src: url("/Font/mika-melvas-monteria-regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -30,7 +30,7 @@
 
 /* contoh penggunaan */
 .monteria {
-  font-family: "Monteria", Monteria;
+  font-family: "Monteria", sans-serif;
 }
 
 /* globals.css */

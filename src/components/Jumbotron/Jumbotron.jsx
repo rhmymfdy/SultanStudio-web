@@ -52,7 +52,7 @@ export default function Jumbotron() {
               Welcome to our website
             </h1>
             <hr className="border-gold w-[30%] border-2 mb-3 rounded-[100px]" />
-            <p className="catarman font-normal text-[18px] text-black mb-2">
+            <p className=" leading-relaxed text-[18px] text-black mb-2">
               Selamat datang di <strong>Sultan Studio</strong> — Studio foto bergaya elegan dengan nuansa mewah. Didukung peralatan modern dan lokasi strategis, kami hadirkan pengalaman premium dengan harga terjangkau. Cocok untuk sesi keluarga, prewedding, personal branding, hingga kebutuhan komersial.
             </p>
             <h2 className="agatho text-2xl font-semibold text-black mb-6">
@@ -61,7 +61,7 @@ export default function Jumbotron() {
             <div className="flex flex-col items-center  gap-10 space-y-4 sm:flex-row sm:space-y-0 ">
               <Link
                 href="#"
-                className="inline-flex items-center justify-around py-3 px-5 agatho text-[20px] font-medium text-center text-white rounded-[80px] bg-gold hover:bg-gold_tua"
+                className="inline-flex items-center justify-around py-3 px-5 text-[20px] font-medium text-center text-white rounded-[80px] bg-gold hover:bg-gold_tua"
               >
                 Chat Admin Via WhatsApp
 
@@ -81,16 +81,16 @@ export default function Jumbotron() {
 
 
       {/* --- MOBILE (kurang dari lg) --- */}
-      <section className="block lg:hidden items-center transition-all duration-700">
-        <div className="mt-23 text-center px-4 md:px-10 ">
-          <h1 className="text-black text-2xl md:text-3xl agatho font-bold mb-2">
+      <section className="block lg:hidden items-center transition-all duration-700  mb-4 mt-8 ">
+        <div className="mt-27 text-center px-4 md:px-10 ">
+          <h1 className="text-black text-3xl md:text-4xl p-2 agatho font-bold ">
             Welcome to our website
           </h1>
-          <hr className="m-auto border-gold w-[40%] md:w-[30%] border lg:border-2 mb-3 rounded-[100px]" />
-          <p className="catarman font-normal text-[12px] md:text-[16px] text-black mb-2">
+          <hr className="m-auto border-gold w-[40%] md:w-[30%] border lg:border-2 mb-4 rounded-[100px]" />
+          <p className="catarman font-normal text-[14px] md:text-[16px] text-black mb-5">
             Selamat datang di <strong>Sultan Studio</strong> — Studio foto bergaya elegan dengan nuansa mewah. Didukung peralatan modern dan lokasi strategis, kami hadirkan pengalaman premium dengan harga terjangkau. Cocok untuk sesi keluarga, prewedding, personal branding, hingga kebutuhan komersial.
           </p>
-          <h2 className="agatho text-[16px] font-bold md:text-[20px] text-black mb-2">
+          <h2 className="agatho text-[18px] font-bold md:text-[22px] text-black mb-6">
             Abadikan Moment Indahmu Bersama Kami!
           </h2>
         </div>
@@ -120,10 +120,10 @@ export default function Jumbotron() {
         </div>
 
 
-        <div className="px-4 md:px-10text-center mt-2">
+        <div className="px-4 md:px-10text-center mt-6">
           <Link
             href="#"
-            className="inline-flex items-center w-full justify-center py-3 px-5 agatho text-[14px] md:text-[16px] font-medium text-center text-white rounded-[80px] bg-gold hover:bg-gold_tua"
+            className="inline-flex items-center w-full justify-center py-3 px-5 text-[16px] md:text-[20px] font-medium text-center text-white rounded-[80px] bg-gold hover:bg-gold_tua"
           >
             Chat Admin Via WhatsApp
 
